@@ -19,8 +19,7 @@ The user should clone the repository from GitHub and download Node. This applica
 <li>Deployed Site: https://jennybloemen.github.io/JB-ProReadmeGen/
 <li>GitHub Repo: https://github.com/JennyBloemen/JB-ProReadmeGen.git
 <br>
-
-<img src="./assets/images/walkthrough.gif"width="640" height="360"/>
+<img src="./assets/images/Walkthrough.gif"width="640" height="360"/>
 
 ## License
 This project is licensed under:

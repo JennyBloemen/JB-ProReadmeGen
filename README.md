@@ -18,7 +18,7 @@ The user should clone the repository from GitHub and download Node. This applica
 <li>Run the index.js file from your command line in gitbash or terminal
 <li>Deployed Site: https://jennybloemen.github.io/JB-ProReadmeGen/
 <li>GitHub Repo:https://github.com/JennyBloemen/JB-ProReadmeGen.git
-<br><br>
+<br>
 <img src="./assets/images/walkthrough.gif"width="640" height="360"/>
 
 ## License

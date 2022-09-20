@@ -1,11 +1,9 @@
-// TODO: Include packages needed for this application
+// Packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./assets/js/generateMarkdown');
 
-// TODO: Create an array of questions for user input
-// const questions = [];
-
+// Array of questions for user input
 const questions = [
     {
       type: 'input',
@@ -19,7 +17,7 @@ const questions = [
     },
     {
       type: 'input',
-      message: 'Installation',
+      message: 'Installation instructions:',
       name: 'installation',
     },
     {
@@ -28,34 +26,34 @@ const questions = [
       name: 'usage',
     }, 
     {
-        type: 'list',
-        message: 'License',
-        choices: ['GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3', 'Mozilla Public License 2.0', 'Apache License 2.0', 'MIT License', 'Boost Software License 1.0', 'The Unlicense'],
-        name: 'license',
-      }, 
-      {
-        type: 'input',
-        message: 'Please provide guidelines on how other developers can contribute to your project:',
-        name: 'contribute',
-      }, 
-      {
-        type: 'input',
-        message: 'Tests',
-        name: 'testing',
-      }, 
-      {
-        type: 'input',
-        message: 'Please enter your email:',
-        name: 'email',
-      },
-      {
-        type: 'input',
-        message: 'Please enter your GitHub username:',
-        name: 'github',
-      },
+      type: 'list',
+      message: 'License',
+      choices: ['Apache 2.0', 'Boost 1.0', 'MIT', 'BSD-3', 'BSD-2', 'Mozilla', 'None'],
+      name: 'license',
+    }, 
+    {
+      type: 'input',
+      message: 'Contribution instructions:',
+      name: 'contribute',
+    }, 
+    {
+      type: 'input',
+      message: 'Test instructions:',
+      name: 'testing',
+    }, 
+    {
+      type: 'input',
+      message: 'Please enter your email:',
+      name: 'email',
+    },
+    {
+      type: 'input',
+      message: 'Please enter your GitHub username:',
+      name: 'github',
+    },
   ];
 
-// function to create the README file
+// Function to create the README file
 function writeToFile (fileName, data) {
   fs.writeFile(fileName, data, (err) => {
   if (err) throw err;
